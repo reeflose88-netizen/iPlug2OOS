@@ -5,13 +5,28 @@
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerCommandArguments>$(CLAP_64_COMMAND_ARGS)</LocalDebuggerCommandArguments>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64EC'">
+    <LocalDebuggerCommand>$(CLAP_ARM64_HOST_PATH)</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>$(CLAP_64_COMMAND_ARGS)</LocalDebuggerCommandArguments>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LocalDebuggerCommand>$(CLAP_64_HOST_PATH)</LocalDebuggerCommand>
     <LocalDebuggerCommandArguments>$(CLAP_64_COMMAND_ARGS)</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64EC'">
+    <LocalDebuggerCommand>$(CLAP_ARM64_HOST_PATH)</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>$(CLAP_64_COMMAND_ARGS)</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tracer|x64'">
     <LocalDebuggerCommand>$(CLAP_64_HOST_PATH)</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>$(CLAP_64_COMMAND_ARGS)</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tracer|ARM64EC'">
+    <LocalDebuggerCommand>$(CLAP_ARM64_HOST_PATH)</LocalDebuggerCommand>
     <LocalDebuggerCommandArguments>$(CLAP_64_COMMAND_ARGS)</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
